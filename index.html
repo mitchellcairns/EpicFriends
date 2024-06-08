@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Epic Friends</title>
+</head>
+
+
+<body>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <div class="context">
+        <div class="header-container">
+            <h1>Epic Friends</h1>
+            <div id="epicRefreshBtn" class="refresh-button">↺</div>
+        </div>
+        
+        <div class="login-container">
+            <div id="epicLoginBtn" class="sp-button disable">Login</div>
+            <div id="epicAuthBtn" class="sp-button disable">Authenticate</div>
+            <div id="epicAuthStatus" class="auth-status-card">Status: Signed Out</div>
+        </div>
+
+        <div class="friend-divider"></div>
+
+        <div class="friend-search-container">
+            <input type="text" class="friend-search-textinput" id="friend-search-textvalue" placeholder="Friend Username">
+            <div id="epidAddBtn" class="sp-button disable">Add</div>
+        </div>
+
+        <div class="friend-divider"></div>
+
+        <div id="friend-container">
+            <!-- Template for friend card -->
+            <template id="friend-template">
+                <div class="friend-card">
+                    <div class="player-name">NiceMitch</div>
+                    <div class="friend-button-container">
+                        <div id="btn-delete" class="friend-button">Delete</div>
+                        <div id="btn-accept" class="friend-button request">Accept</div>
+                        <div id="btn-cancel" class="friend-button cancel">Cancel</div>
+                    </div>
+                    
+                    <div class="friend-divider"></div>
+                    <div class="player-id">f849e8ee86ff4cd7b7e819c7bbbc5fa5</div>
+                </div>
+            </template>
+        </div>
+    
+    </div>
+</body>
+
+<script src="page.js"></script>
+
+</html>
